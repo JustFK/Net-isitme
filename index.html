@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net İşitme Merkezi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Özel stil tanımlamaları buraya eklenebilir */
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Net İşitme Merkezi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#anasayfa">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hakkimizda">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hizmetler">Hizmetler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="anasayfa" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="wwwroot/NetİsitmeLogo.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="wwwroot/image2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="wwwroot/image3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#anasayfa" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Önceki</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#anasayfa" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sonraki</span>
+        </button>
+    </div>
+
+    <!-- Hakkımızda -->
+    <section id="hakkimizda" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Hakkımızda</h2>
+            <p>Net İşitme Merkezi olarak, işitme sağlığı konusunda uzman kadromuz ve ileri teknoloji cihazlarımızla siz değerli hastalarımıza en iyi hizmeti sunmayı amaçlıyoruz. Kurulduğumuz günden bu yana, işitme kaybı yaşayan bireylerin hayat kalitesini artırmak için çalışıyoruz.</p>
+        </div>
+    </section>
+
+    <!-- Hizmetler -->
+    <style>
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+            opacity: 1;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #4CAF50;
+            border-radius: 50%;
+            padding: 20px;
+        }
+        .product-card {
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: contain;
+            padding: 15px;
+        }
+    </style>
+    
+    <section id="urunler" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Phonak Ürünlerimiz</h2>
+            <div id="phonakCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="wwwroot/phonak-audeo-paradise-charger.jpeg" class="card-img-top" alt="Phonak Audéo Paradise">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phonak Audéo Paradise</h5>
+                                        <p class="card-text">Olağanüstü ses deneyimi için tasarlandı.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="wwwroot/phonakaudeolife.jpeg" class="card-img-top" alt="Phonak Audéo Life">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phonak Audéo Life</h5>
+                                        <p class="card-text">Su geçirmez ve şarj edilebilir işitme cihazı.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="wwwroot/phonakaudiofit.jpg" class="card-img-top" alt="Phonak Audéo Fit">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phonak Audéo Fit</h5>
+                                        <p class="card-text">Sağlık takibi özellikli işitme cihazı.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="wwwroot/phonakvirtoparadise.jpg" class="card-img-top" alt="Phonak Virto Paradise">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phonak Virto Paradise</h5>
+                                        <p class="card-text">Kişiye özel, kulak içi işitme cihazı.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="wwwroot/phonakvirtomarvel.jpg" class="card-img-top" alt="Phonak Virto Marvel">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phonak Virto Marvel</h5>
+                                        <p class="card-text">Bluetooth bağlantılı kulak içi cihaz.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="wwwroot/phonaknaidaparadise.jpg" class="card-img-top" alt="Phonak Naída Paradise">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phonak Naída Paradise</h5>
+                                        <p class="card-text">Güçlü işitme çözümü.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="wwwroot/Phonak-Sky™-Marvel.jpeg" class="card-img-top" alt="Phonak Sky Marvel">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phonak Sky Marvel</h5>
+                                        <p class="card-text">Çocuklar için tasarlanmış işitme cihazı.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="wwwroot/Phonak Cross P.jpg" class="card-img-top" alt="Phonak CROS P">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phonak CROS P</h5>
+                                        <p class="card-text">Tek taraflı işitme kaybı için çözüm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="wwwroot/phonaklyric.jpg" class="card-img-top" alt="Phonak Lyric">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phonak Lyric</h5>
+                                        <p class="card-text">100% görünmez, 24/7 kullanılabilen işitme cihazı.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#phonakCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Önceki</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#phonakCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sonraki</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- İletişim -->
+    <section id="iletisim" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">İletişim</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Adres</h3>
+                    <p>	Cumhuriyet Mah. Millet Cad. No:27/1 Melikgazi / KAYSERİ</p>
+                    <h3>Telefon</h3>
+                    <p>+90 (532) 597 28</p>
+                    <h3>E-posta</h3>
+                    <p>info@netisitmemerkezi.com</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Adınız">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="E-posta Adresiniz">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Mesajınız"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Net İşitme Merkezi. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
